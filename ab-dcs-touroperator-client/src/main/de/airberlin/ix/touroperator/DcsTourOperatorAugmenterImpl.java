@@ -6,6 +6,6 @@ public class DcsTourOperatorAugmenterImpl implements DcsTourOperatorAugmenter {
 
     @Override
     public void augment(DcsFlightLeg dcsFlightLeg) {
-
+        throw new RuntimeException("OOps!");
     }
 }
