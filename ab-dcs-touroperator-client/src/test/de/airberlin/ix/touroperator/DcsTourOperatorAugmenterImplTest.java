@@ -79,6 +79,8 @@ public class DcsTourOperatorAugmenterImplTest {
         bookingServices = new BookingServices(mockContext, mockDataHandler, mockActionHandler);
         dcsFlightLegServices = new DcsFlightLegServices(mockContext, mockDataHandler, mockActionHandler);
         linkServices = new DcsBookingLinkServices(mockContext, mockDataHandler, mockActionHandler);
+        when(mockContext.getDomainServices(Booking.class)).thenReturn(bookingServices);
+        when(mockContext.getDomainServices(DcsBookingLink.class)).thenReturn(linkServices);
 
         booking = null;
     }
@@ -99,7 +101,7 @@ public class DcsTourOperatorAugmenterImplTest {
             log.debug("Processing pax: " + dcsPax);
             for(DcsPaxSegment segment : dcsPax.getDcsPaxSegments()) {
                 log.debug("\tProcessing segment: " + segment);
-                List<Booking> linkedDataObjects = segment.getLinkedDataObjects(Booking.class);
+                List<DcsBookingLink> linkedDataObjects = segment.getLinkedDataObjects(DcsBookingLink.class);
 
             }
         }

@@ -28,7 +28,7 @@
   <!-- ================================= -->
   <!-- A size limit rolling appender -->
   <appender name="FILE" class="org.apache.log4j.RollingFileAppender">
-    <param name="File" value="C:/dev/DcsTourOperatorAugmenter/DcsTourOperatorAugmenter/run.log”/>
+    <param name="File" value="/Volumes/2TB/src/DcsTourOperatorAugmenter/run.log"/>
     <param name="Append" value="true"/>
     <!-- Max File Size and Backup Count. Max space on disk-> multiply these together -->
     <param name="MaxFileSize" value="10000KB"/>

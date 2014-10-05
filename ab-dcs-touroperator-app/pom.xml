@@ -53,5 +53,23 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <sourceDirectory>${project.basedir}/src/main/</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/</testSourceDirectory>
+        <finalName>ab-dcs-touroperator-client</finalName>
+        <resources>
+            <resource>
+                <directory>src/test</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main</directory>
+                <includes>
+                    <include>**/*.hbm.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 </project>
