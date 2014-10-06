@@ -5,7 +5,7 @@
         <ns:ClassName>de.airberlin.ix.touroperator.DcsTourOperatorAnalyzer</ns:ClassName>
         <ns:ClientAnalyzerDependencies/>
         <ns:ClientContainers>
-            <ns:ClientContainer>Booking Client Container</ns:ClientContainer>
+            <ns:ClientContainer>DcsFlightLeg Client Analysis</ns:ClientContainer>
         </ns:ClientContainers>
     </ns:ClientAnalyzer>
 </ns:ClientAnalyzers>

@@ -15,6 +15,7 @@ import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -90,6 +91,7 @@ public class DcsTourOperatorAnalyzerTest {
     }
 
     @Test
+    @Ignore
     public void verifyBasicProcessingOfDcsFlightLeg() throws IOException {
         String dcsXml = loadTestData("dcs_AB_6436_2014_07_01.xml");
         dcsFlightLeg = new DcsFlightLeg(dcsFlightLegServices, dcsXml);
