@@ -4,5 +4,6 @@
     <ns:Dependencies/>
     <ns:Configuration>
         <ns:ConfigItem type="MetaModel" name="DynamicAttributes" source="DcsTourOperatorDynamicAttributes.xml"/>
+        <ns:ConfigItem type="ClientAnalyzer" name="DcsTourOperatorAnalyzer" source="DcsTourOperatorAnalyzer.xml"/>
     </ns:Configuration>
 </ns:ASxModule>
