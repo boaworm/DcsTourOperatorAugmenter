@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
 			<groupId>de.airberlin.ix</groupId>
-            <artifactId>ab-dcs-touroperator-client</artifactId>
+            <artifactId>ab-dcs-touroperator-analyzer</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -23,7 +23,6 @@ import org.mockito.runners.MockitoJUnitRunner;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.util.List;
 
 import static junit.framework.TestCase.assertNotNull;
@@ -32,11 +31,11 @@ import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DcsTourOperatorAugmenterImplTest {
+public class DcsTourOperatorAnalyzerTest {
 
-    private static final Logger log = Logger.getLogger(DcsTourOperatorAugmenterImplTest.class);
+    private static final Logger log = Logger.getLogger(DcsTourOperatorAnalyzerTest.class);
 
-    DcsTourOperatorAugmenter augmenter;
+    DcsTourOperatorAnalyzer analyzer;
 
     BookingServices bookingServices;
     DcsFlightLegServices dcsFlightLegServices;
@@ -60,7 +59,7 @@ public class DcsTourOperatorAugmenterImplTest {
 
     @Before
     public void setUp() throws IOException, DocumentException {
-        augmenter = new DcsTourOperatorAugmenterImpl();
+        analyzer = new DcsTourOperatorAnalyzer();
 
         String hostName = InetAddress.getLocalHost().getHostName();
         if (hostName.contains("htlinux")) {
@@ -87,7 +86,7 @@ public class DcsTourOperatorAugmenterImplTest {
 
     @After
     public void tearDown() {
-        augmenter = null;
+        analyzer = null;
     }
 
     @Test
