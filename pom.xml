@@ -15,7 +15,6 @@
     <name>AbDcsTourOperator</name>
     <repositories>
 
-        <!--
         <repository>
             <id>ix-public-release</id>
             <url>http://localhost:8081/nexus/content/repositories/sabre-release</url>
@@ -29,17 +28,6 @@
         <repository>
             <id>ix-public-snapshot</id>
             <url>http://localhost:8081/nexus/content/repositories/sabre-snapshot</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        -->
-        <repository>
-            <id>ix-public-repositories</id>
-            <url>http://ci-ix.sgdcelab.sabre.com:8001/nexus/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
