@@ -13,9 +13,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>ab-dcs-touroperator-client</artifactId>
+    <artifactId>ab-dcs-touroperator-analyzer</artifactId>
     <packaging>jar</packaging>
-	<name>AbDcsTourOperator Client</name>
+	<name>AbDcsTourOperator Analyzer</name>
     <!--
     <repositories>
         <repository>
@@ -203,7 +203,7 @@
     <build>
         <sourceDirectory>${project.basedir}/src/main/</sourceDirectory>
         <testSourceDirectory>${project.basedir}/src/test/</testSourceDirectory>
-        <finalName>ab-dcs-touroperator-client</finalName>
+        <finalName>ab-dcs-touroperator-analyzer</finalName>
         <resources>
             <resource>
                 <directory>src/test</directory>
