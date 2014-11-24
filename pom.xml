@@ -17,7 +17,7 @@
 
         <repository>
             <id>ix-public-release</id>
-            <url>http://localhost:8081/nexus/content/repositories/sabre-release</url>
+            <url>http://172.17.23.63:8081/nexus/content/repositories/sabre-release</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -27,7 +27,7 @@
         </repository>
         <repository>
             <id>ix-public-snapshot</id>
-            <url>http://localhost:8081/nexus/content/repositories/sabre-snapshot</url>
+            <url>http://172.17.23.63:8081/nexus/content/repositories/sabre-snapshot</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -43,7 +43,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <source.language.level>1.7</source.language.level>
         <target.language.level>1.7</target.language.level>
-        <platform.version>6.2.1-SNAPSHOT</platform.version>
+        <platform.version>6.2.1</platform.version>
         <failsafe.skipITs>true</failsafe.skipITs>
     </properties>
 
@@ -64,7 +64,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>ix-plugin-public-repositories</id>
-            <url>http://localhost:8081/nexus/content/groups/public/</url>
+            <url>http://172.17.23.63:8081/nexus/content/groups/public/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>

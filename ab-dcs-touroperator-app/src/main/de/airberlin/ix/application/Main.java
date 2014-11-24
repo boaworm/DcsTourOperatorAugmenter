@@ -4,6 +4,7 @@ import com.sabre.ix.client.DcsFlightLeg;
 import com.sabre.ix.client.DcsFlightLegServices;
 import com.sabre.ix.client.context.Context;
 import com.sabre.ix.client.context.ContextFactory;
+import de.airberlin.ix.touroperator.DcsTourOperatorAnalyzer;
 import de.airberlin.ix.touroperator.DcsTourOperatorAugmenter;
 import de.airberlin.ix.touroperator.DcsTourOperatorAugmenterImpl;
 
@@ -16,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DcsTourOperatorAugmenter augmenter = new DcsTourOperatorAugmenterImpl();
+        DcsTourOperatorAnalyzer augmenter = new DcsTourOperatorAugmenterImpl();
 
         Context context = ContextFactory.createContext();
         DcsFlightLegServices dcsFlightLegServices = (DcsFlightLegServices) context.getDomainServices(DcsFlightLeg.class);

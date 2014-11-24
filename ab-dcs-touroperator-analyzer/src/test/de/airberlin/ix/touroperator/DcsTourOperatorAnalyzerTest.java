@@ -67,7 +67,7 @@ public class DcsTourOperatorAnalyzerTest {
             testdataPath = "/home/henrik/src/DcsTourOperatorAugmenter/testdata/";
         } else if (hostName.contains("montecito")) {
             testdataPath = "/Volumes/2TB/src/DcsTourOperatorAugmenter/testdata/";
-        } else if (hostName.contains("H8460305022460")) {
+        } else if (hostName.contains("H9470305477081")) {
             testdataPath = "C:\\src\\DcsTourOperatorAugmenter\\testdata\\";
         } else {
             testdataPath = "C:\\dev\\DcsTourOperatorAugmenter\\testdata\\";

@@ -16,21 +16,6 @@
     <artifactId>ab-dcs-touroperator-analyzer</artifactId>
     <packaging>jar</packaging>
 	<name>AbDcsTourOperator Analyzer</name>
-    <!--
-    <repositories>
-        <repository>
-            <id>ix-public-repositories</id>
-            <url>http://localhost:8081/nexus/content/repositories/sabre</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-
-    </repositories>
-    -->
 
     <dependencies>
         <!-- No need for versions on child dependencies -->
@@ -89,12 +74,6 @@
             <artifactId>ix-opsbookinglinkdomain</artifactId>
             <version>${platform.version}</version>
         </dependency>
-        <dependency>
-            <groupId>sabre.domains.opsbookinglinkdomain</groupId>
-            <artifactId>ix-opsbookinglinkdomain</artifactId>
-            <version>${platform.version}</version>
-            <classifier>sources</classifier>
-        </dependency>
 
         <dependency>
             <groupId>sabre.domains.opsbookinglinkdomain</groupId>
@@ -112,12 +91,6 @@
             <groupId>sabre.domains.dcsbookinglinkdomain</groupId>
             <artifactId>ix-dcsbookinglinkdomain</artifactId>
             <version>${platform.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>sabre.domains.dcsbookinglinkdomain</groupId>
-            <artifactId>ix-dcsbookinglinkdomain</artifactId>
-            <version>${platform.version}</version>
-            <classifier>sources</classifier>
         </dependency>
 
         <dependency>
