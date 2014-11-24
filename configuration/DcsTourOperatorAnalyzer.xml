@@ -3,6 +3,7 @@
     <ns:ClientAnalyzer>
         <ns:Name>DcsTourOperatorAnalyzer</ns:Name>
         <ns:ClassName>de.airberlin.ix.touroperator.DcsTourOperatorAnalyzer</ns:ClassName>
+        <ns:ElementName>DcsFlightLeg</ns:ElementName>
         <ns:ClientAnalyzerDependencies/>
         <ns:ClientContainers>
             <ns:ClientContainer>DcsFlightLeg Client Analysis</ns:ClientContainer>
