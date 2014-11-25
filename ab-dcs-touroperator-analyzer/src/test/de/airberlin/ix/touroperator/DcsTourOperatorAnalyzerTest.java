@@ -74,7 +74,7 @@ public class DcsTourOperatorAnalyzerTest {
         } else if (hostName.contains("H9470305477081")) {
             testdataPath = "C:\\src\\DcsTourOperatorAugmenter\\testdata\\";
         } else {
-            testdataPath = "C:\\dev\\DcsTourOperatorAugmenter\\testdata\\";
+            testdataPath = "C:\\dev\\DcsTourOperatorAugmenter\\DcsTourOperatorAugmenter\\testdata\\";
         }
 
         mockMetaModel = prepareMetaModel(DocumentHelper.parseText(loadTestData("metamodel.xml")));
@@ -113,7 +113,6 @@ public class DcsTourOperatorAnalyzerTest {
     }
 
     @Test
-    @Ignore
     public void verifyLiveWithQueryServices() {
         Context liveContext = ContextFactory.createContext();
         DcsFlightLegServices liveDcsFlightLegServices = (DcsFlightLegServices) liveContext.getDomainServices(DcsFlightLeg.class);
