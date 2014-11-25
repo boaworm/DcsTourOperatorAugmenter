@@ -7,15 +7,16 @@
 -->
 <contextConfiguration> 
   <webServiceDataLoader username="Admin">
-      <!--
-          <jsonPlatformServices defaultURL="http://asxstg.airberlin.net:8080/asx/ws/unprotected_json/"/>
-          <soapPlatformServices defaultURL="http://asxstg.airberlin.net:8080/"/>
-          <domainServices defaultURL="http://asxstg.airberlin.net:8
-    -->
 
+          <jsonPlatformServices defaultURL="http://asxws.airberlin.net:8080/asx/ws/unprotected_json/"/>
+          <soapPlatformServices defaultURL="http://asxws.airberlin.net:8080/"/>
+          <domainServices defaultURL="http://asxws.airberlin.net:8080/"/>
+
+<!--
         <jsonPlatformServices defaultURL="http://192.168.1.65:8111/asx/ws/unprotected_json/"/>
         <soapPlatformServices defaultURL="http://192.168.1.65:8111/"/>
         <domainServices defaultURL="http://192.168.1.65:8111"/>
+         -->
 <!--
       <jsonPlatformServices defaultURL="http://ltxl2604.sgdcelab.sabre.com:7000/asx/ws/unprotected_json/"/>
       <soapPlatformServices defaultURL="http://ltxl2604.sgdcelab.sabre.com:7000/"/>
@@ -45,6 +46,6 @@
       <jcsProperty key="jcs.default.elementattributes.IsLateral" value="true"/> 
     </jcsProperties> 
   </distributedCacheDataLoader>
-    <databaseDataLoader databaseXmlPath="/Volumes/2TB/src/DwhExporter/config/database.xml"/>
+    <!--databaseDataLoader databaseXmlPath="/Volumes/2TB/src/DwhExporter/config/database.xml"/-->
     <rootDataHandler className='com.sabre.ix.client.datahandler.IXClientDataHandlerImpl'/>
 </contextConfiguration>
