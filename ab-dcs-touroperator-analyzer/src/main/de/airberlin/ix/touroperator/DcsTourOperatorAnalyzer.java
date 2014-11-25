@@ -75,7 +75,7 @@ public class DcsTourOperatorAnalyzer implements Analyzer<DcsFlightLeg>, ContextA
                         dcsPax.setDynamicAttribute("TourOperator", tourOperator);
                     }
                     if (tourOperatorBookingNumber != null && !tourOperatorBookingNumber.isEmpty()) {
-                        dcsPax.setDynamicAttribute("TourOperator", tourOperatorBookingNumber);
+                        dcsPax.setDynamicAttribute("TourOperatorBookingNumber", tourOperatorBookingNumber);
                     }
 
                 } else {
